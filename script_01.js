@@ -5,6 +5,8 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
 import gsap from 'gsap';
 
+console.log("import ready")
+
 // /**
 //  * Spector JS
 //  */
@@ -27,7 +29,7 @@ const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
 
-
+console.log("canvas, scene ready")
 
 /* Loaders =================================================================================*/
 
@@ -42,7 +44,7 @@ dracoLoader.setDecoderPath('draco/')
 const gltfLoader = new GLTFLoader()
 gltfLoader.setDRACOLoader(dracoLoader)
 
-
+console.log("loaders ready")
 
 
 /* Lights =================================================================================*/
@@ -86,7 +88,7 @@ scene.add(AmbientLight)
 //gui.add( spotLight03, 'intensity', 0, 5, 0.001 );
 //gui.add( AmbientLight, 'intensity', 0, 1, 0.001 );
 
-
+console.log("lights ready")
 
 /* Textures =================================================================================*/
 //Long sleeve textures
@@ -121,7 +123,7 @@ bumpTextureShort.flipY = false
 bumpTextureShort.encoding = THREE.sRGBEncoding
 
 
-
+console.log("textures ready")
 
 /* Materials =================================================================================*/
 // Baked Long sleeve material
@@ -142,6 +144,7 @@ const bakedMaterialShort = new THREE.MeshStandardMaterial({
     side: THREE.DoubleSide,   
 });
 
+console.log("material ready")
 
 /* Model =================================================================================*/
 
@@ -177,7 +180,7 @@ gltfLoader.load('assets/dres_02.glb', (gltf) =>
 scene.add( dresGroup );
 gsap.to(dresGroup.rotation, { duration: 1.5, y: Math.PI/10 * -1.6 })
 
-
+console.log("meshes ready")
 
 
 /* Sizes =================================================================================*/
@@ -261,7 +264,7 @@ function scrollCheck() {
         // scroll Mesh
         if (scrolled >= 0 && scrolled < 35){
             gsap.to(dresGroup.rotation, { duration: 1.5, y: Math.PI/10 * -1.6 })
-            gsap.to(dresGroupp.position, { duration: 1.5, z: 0 })
+            gsap.to(dresGroup.position, { duration: 1.5, z: 0 })
             gsap.to(dresGroup.position, { duration: 1.5, y: 0 })
         }if (scrolled >= 35 && scrolled < 70){
             gsap.to(dresGroup.rotation, { duration: 1.5, y: Math.PI/10 * 11 })
@@ -320,6 +323,8 @@ function scrollCheck() {
         dresMesh.visible = false
     })
 
+
+console.log("buttons ready")
 
 /* Animate =================================================================================*/
 
