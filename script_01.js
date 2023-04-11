@@ -90,33 +90,33 @@ scene.add(AmbientLight)
 
 /* Textures =================================================================================*/
 //Long sleeve textures
-const bakedTextureEmpty = textureLoader.load('/assets/baked_empty.jpg')
+const bakedTextureEmpty = textureLoader.load('assets/baked_empty.jpg')
 bakedTextureEmpty.flipY = false
 bakedTextureEmpty.encoding = THREE.sRGBEncoding
 
-const bakedTextureNutty = textureLoader.load('/assets/baked_nutty.jpg')
+const bakedTextureNutty = textureLoader.load('assets/baked_nutty.jpg')
 bakedTextureNutty.flipY = false
 bakedTextureNutty.encoding = THREE.sRGBEncoding
 
-const bakedTextureJesus = textureLoader.load('/assets/baked_jesus.jpg')
+const bakedTextureJesus = textureLoader.load('assets/baked_jesus.jpg')
 bakedTextureJesus.flipY = false
 bakedTextureJesus.encoding = THREE.sRGBEncoding
 
-const bakedTextureSandy = textureLoader.load('/assets/baked_sandy.jpg')
+const bakedTextureSandy = textureLoader.load('assets/baked_sandy.jpg')
 bakedTextureSandy.flipY = false
 bakedTextureSandy.encoding = THREE.sRGBEncoding
 
-const bumpTexture = textureLoader.load('/assets/bake_bump.jpg')
+const bumpTexture = textureLoader.load('assets/bake_bump.jpg')
 bumpTexture.flipY = false
 bumpTexture.encoding = THREE.sRGBEncoding
 
 
 //Short sleeve textures
-const bakedTextureWhitee = textureLoader.load('/assets/baked_whitee.jpg')
+const bakedTextureWhitee = textureLoader.load('assets/baked_whitee.jpg')
 bakedTextureWhitee.flipY = false
 bakedTextureWhitee.encoding = THREE.sRGBEncoding
 
-const bumpTextureShort = textureLoader.load('/assets/baked_short_sleeve_bump.jpg')
+const bumpTextureShort = textureLoader.load('assets/baked_short_sleeve_bump.jpg')
 bumpTextureShort.flipY = false
 bumpTextureShort.encoding = THREE.sRGBEncoding
 
@@ -148,7 +148,7 @@ const bakedMaterialShort = new THREE.MeshStandardMaterial({
 const dresGroup = new THREE.Group();
 
 let dresMesh
-gltfLoader.load('/assets/dres_01.glb', (gltf) =>
+gltfLoader.load('assets/dres_01.glb', (gltf) =>
     {
         dresMesh = gltf.scene
         dresMesh.traverse((child) =>
@@ -161,7 +161,7 @@ gltfLoader.load('/assets/dres_01.glb', (gltf) =>
 )
 
 let dresMeshShort
-gltfLoader.load('/assets/dres_02.glb', (gltf) =>
+gltfLoader.load('assets/dres_02.glb', (gltf) =>
     {
         dresMeshShort = gltf.scene
         dresMeshShort.traverse((child) =>
