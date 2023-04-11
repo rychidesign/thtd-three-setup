@@ -1,3 +1,5 @@
+console.log("script loaded")
+
 //import * as dat from 'lil-gui'
 import * as THREE from 'three'
 //import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
