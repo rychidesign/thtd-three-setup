@@ -1,10 +1,10 @@
 console.log("script loaded")
 
 //import * as dat from 'lil-gui'
-import * as THREE from 'https://unpkg.com/three@0.150.1/build/three.module.js'
+import * as THREE from 'https://cdn.jsdelivr.net/gh/rychidesign/three-setup/libs/three.module.js'
 //import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
-import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
+import { GLTFLoader } from 'https://cdn.jsdelivr.net/gh/rychidesign/three-setup/libs/DRACOLoader.js'
+import { DRACOLoader } from 'https://cdn.jsdelivr.net/gh/rychidesign/three-setup/libs/DRACOLoader.js'
 import gsap from 'gsap';
 
 console.log("import ready")
