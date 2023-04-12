@@ -3,8 +3,8 @@ console.log("script loaded")
 //import * as dat from 'lil-gui'
 import * as THREE from 'three'
 //import { OrbitControls } from 'controls/OrbitControls.js'
-import { GLTFLoader } from 'loaders/GLTFLoader.js'
-import { DRACOLoader } from 'loaders/DRACOLoader.js'
+import { GLTFLoader } from '/loaders/GLTFLoader.js'
+import { DRACOLoader } from '/loaders/DRACOLoader.js'
 import gsap from 'gsap';
 
 console.log("import ready")
