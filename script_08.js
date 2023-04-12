@@ -5,7 +5,7 @@ import * as THREE from 'three'
 //import { OrbitControls } from 'controls/OrbitControls.js'
 import { GLTFLoader } from '/gh/rychidesign/three-setup/libs/GLTFLoader.js'
 import { DRACOLoader } from '/gh/rychidesign/three-setup/libs/DRACOLoader.js'
-import gsap from '/libs/gsap';
+//import gsap from '/libs/gsap';
 
 console.log("import ready")
 
