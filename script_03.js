@@ -1,7 +1,7 @@
 console.log("script loaded")
 
 //import * as dat from 'lil-gui'
-import * as THREE from 'libs/three.module.js'
+import * as THREE from 'three'
 //import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'loaders/GLTFLoader.js'
 import { DRACOLoader } from 'jsm/loaders/DRACOLoader.js'
