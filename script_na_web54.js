@@ -50,7 +50,7 @@ function init(){
             () =>
             {
                 console.log('progress');
-            },
+            }
         )
 
 
