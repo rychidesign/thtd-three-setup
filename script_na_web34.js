@@ -187,7 +187,7 @@ function init(){
             canvas: canvas,
             antialias: true,
             alpha: true,
-            shadowMapEnabled: true;
+            shadowMapEnabled: true
         })
         renderer.setSize(sizes.width, sizes.height);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
