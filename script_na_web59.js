@@ -259,9 +259,6 @@ function init(){
             const elapsedTime = clock.getElapsedTime();
             // Update controls
             controls.update();
-            helper.update();
-            helper02.update();
-            helper03.update();
             // Render
             renderer.render(scene, camera);
             // Call tick again on the next frame
