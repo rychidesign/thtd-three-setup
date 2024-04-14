@@ -248,7 +248,7 @@ function init(){
         controls.update();
         if(sizes.width < 439){
             controls.enableZoom = true;
-            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 4));
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
         };
 
         /* Animate =================================================================================*/
