@@ -251,27 +251,6 @@ function init(){
             renderer.setPixelRatio(Math.min(window.devicePixelRatio, 4));
         };
 
-
-        /* MOUSE ANIMATION =================================================================================*/
-
-        // mouse mapping
-        document.addEventListener('mousemove', onDocumentMouseMove)
-        let mouseX = 0
-        let mouseY = 0
-
-        let targetX = 0
-        let targetY = 0
-
-        const windowX = window.innerWidth / 2;
-        const windowY = window.innerHeight / 2;
-
-        function onDocumentMouseMove(event){
-            mouseX = (event.clientX - windowX);
-            mouseY = (event.clientY - windowY);
-        }
-
-
-
         /* Animate =================================================================================*/
 
         const clock = new THREE.Clock();
@@ -279,11 +258,7 @@ function init(){
         const tick = () =>
         {   
             const elapsedTime = clock.getElapsedTime();
-            // Mouse animation
-            targetX = mouseX * .0003
-            targetY = mouseY * .0003
-            dresGroup.rotation.y += 0.05 * (targetX - dresGroup.rotation.y);
-            dresGroup.rotation.x += -0.05 * (targetY - dresGroup.rotation.x);
+
             // Update controls
             controls.update();
             // Render
