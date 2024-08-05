@@ -69,7 +69,7 @@ function build3DScene(){
             () =>
             {
                 console.log('progress');
-                loaderWrapper.style.display = 'block';
+                loaderWrapper.style.display = 'flex';
             }
         )
 
@@ -284,11 +284,20 @@ function build3DScene(){
             dresMeshLong.visible = false;
         });
 
+        /*
         nameInput.addEventListener('change', function(){
             nameOnDesign.innerHTML = nameInput.value;
             generateImage();
         });
+        */
 
+        nameInput.addEventListener('keyup', function(){
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+                nameOnDesign.innerHTML = nameInput.value;
+                generateImage();
+            }, 500);
+        });
 
         function updateSetUp(){
 
