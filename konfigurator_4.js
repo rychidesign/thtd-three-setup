@@ -41,7 +41,7 @@ function build3DScene(){
         const loaderWrapper = document.getElementById('loader-wrapper');
         const wrapper = document.querySelector('div.product_3d_wrapper');
         var productModel = configuratorSetUp.longSleeve //document.getElementById('product_model').innerHTML;
-        const productRotation = '2';
+        const productRotation = document.getElementById('product_rotation').innerHTML;
         const ambientColor = '#ffffff';
         const ambientIntensity = '0.8';
 
@@ -203,6 +203,7 @@ function build3DScene(){
 
         scene.add( dresGroup );
         dresGroup.rotation.y = Math.PI/10 * productRotation;
+        gsap.to(dresGroup.rotation, { duration: 1.8, y: Math.PI/10 * productRotation });
 
 
         /* Sizes =================================================================================*/
