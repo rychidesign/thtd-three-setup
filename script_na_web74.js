@@ -18,7 +18,7 @@ import { DRACOLoader } from 'https://cdn.jsdelivr.net/gh/rychidesign/thtd-three-
 
 
 function checkWebGLSupport(){
-    if(isWebGL2Supported && !!(document.getElementById('product_model').innerHTML = '');){
+    if(isWebGL2Supported && document.getElementById('product_model').innerHTML !== ''){
         init();
     }else{
         document.getElementById('3d_image_wrapper').style.display = 'none';
