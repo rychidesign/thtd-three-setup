@@ -184,8 +184,7 @@ function init(){
         )
 
         scene.add( dresGroup );
-        //dresGroup.rotation.y = Math.PI/10 * productRotation;
-        gsap.to(dresGroup.rotation, { duration: 1.8, y: Math.PI/10 * productRotation });
+        dresGroup.rotation.y = Math.PI/10 * productRotation;
 
 
         /* Sizes =================================================================================*/

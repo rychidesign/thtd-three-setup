@@ -198,8 +198,7 @@ function build3DScene(){
         )
 
         scene.add( dresGroup );
-        //dresGroup.rotation.y = Math.PI/10 * productRotation;
-        gsap.to(dresGroup.rotation, { duration: 2, y: Math.PI/10 * productRotation });  
+        dresGroup.rotation.y = Math.PI/10 * productRotation;
 
 
         /* Sizes =================================================================================*/
